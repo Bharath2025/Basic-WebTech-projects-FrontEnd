@@ -1,0 +1,293 @@
+/* playlist-page -responsive.css */
+/* This page contains all the necessary media quiries for the playlist page ie Single_playlist_Screen.html */
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+/* These are the media quires at the breakpoint for the desktop ie 992px */
+/* Entire Website should not break at >992px . (Desktop View)*/
+
+/* These are the media quires at the breakpoint for the Tablet ie <992px and <600px */
+/* Website should not break at <992px and >600px. (Tablet View) */
+
+@media screen and (max-width: 992px) {
+  /* The first thing is to hide the aside section2 and providing a more icon to view that */
+  label[for="more"] {
+    display: flex;
+    cursor: pointer;
+  }
+  /*hidding the aside section 2 */
+  .section2 {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 400px;
+    height: 75vh;
+    background-image: url("media/background gradient6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 2px 2px white;
+    top: 20%;
+    right: 0px;
+    z-index: 5;
+    overflow: scroll;
+    padding-left: 10px;
+    transition: visibility ease-in-out 0.2s;
+    transition: opacity ease-in-out 0.2s;
+  }
+  .playlist-item {
+    overflow: visible;
+  }
+
+  /* more button */
+  input[id="more"]:checked ~ .section2 {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* To hide the scroll bar of section 2*/
+  .section2::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* when the section 2 is hidden, section1 width becomes 100% to cover the whole page */
+  .section1 {
+    width: 100%;
+  }
+  /*Adjustments for the section1 */
+
+  /* Adjustments to the artist-descriptive section */
+  .artist-header {
+    height: 30vw;
+  }
+
+  .song-name {
+    font-size: 15px;
+  }
+  .artist-name {
+    font-size: 13px;
+  }
+  .followers {
+    font-size: 12px;
+    padding: 3px;
+  }
+  .descriptive-part {
+    padding: 5px;
+    font-size: 12px;
+  }
+  .btns button {
+    width: 30%;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .btns button:hover {
+    box-shadow: 0px 0px 5px 1px white;
+    font-size: 12px;
+  }
+  .ending-detail {
+    font-size: 12px;
+  }
+}
+
+/* These are the media quires at the breakpoint for the mobile ie <600px */
+/* Website should not break at <600px. (Mobile View) */
+
+@media screen and (max-width: 600px) {
+  /* adjustments for the navigation section */
+  /* In this view iam hidding the favourites as well as notification section since they can access directly in mobile */
+  .navigation-bar > div:nth-child(2n) {
+    display: none;
+  }
+  .website-name p:nth-child(1) {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .website-name p:nth-child(2) {
+    font-size: 12px;
+    color: lightgrey;
+  }
+  .search-bar {
+    width: 30%;
+    height: auto;
+    position: relative;
+  }
+
+  /*Adjustments for the section1 */
+
+  /* Adjustments to the artist-descriptive section */
+  .artist-header {
+    height: 35vw;
+  }
+
+  .song-name {
+    font-size: 12px;
+  }
+  .artist-name {
+    font-size: 10px;
+  }
+  .followers {
+    font-size: 10px;
+    padding: 1px;
+  }
+  .descriptive-part {
+    padding: 2px;
+    font-size: 8px;
+  }
+  .btns button {
+    width: 30%;
+    height: 20px;
+    font-size: 10px;
+  }
+  .btns button:hover {
+    box-shadow: 0px 0px 5px 1px white;
+    font-size: 10px;
+  }
+  .ending-detail {
+    font-size: 8px;
+  }
+
+  /*adjustments for the aside section 2*/
+
+  .section2 {
+    width: 300px;
+    height: 70vh;
+  }
+
+  /*adustments for the footer section */
+  .album-name {
+    font-size: 14px;
+  }
+  .composer {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .time {
+    font-size: 12px;
+  }
+  .player {
+    width: 50%;
+  }
+  .controls {
+    width: 60%;
+  }
+
+  /*here iam removing the audio slider because for mobile we will get the audio options as button */
+  .other-icons {
+    width: 10%;
+  }
+  .other-icons div:nth-child(2) {
+    display: none;
+  }
+  .other-icons div:nth-child(3) {
+    display: none;
+  }
+  .other-icons div:nth-child(4) {
+    display: none;
+  }
+  .other-icons div:nth-child(5) {
+    display: none;
+  }
+}
+
+/* These are the media quires at the breakpoint for the mobile ie <400px */
+/* for my mobile dimensions */
+
+@media screen and (max-width: 400px) {
+  /* adjustments for the navigation section */
+
+  .website-name p:nth-child(1) {
+    font-size: 10px;
+  }
+  .website-name p:nth-child(2) {
+    font-size: 8px;
+    color: lightgrey;
+  }
+  .search-bar {
+    height: 20px;
+  }
+  .search-bar input {
+    font-size: 10px;
+  }
+  /*adjustments for aside section 2*/
+  .section2::-webkit-scrollbar {
+    display: none;
+  }
+
+  /*adjustments for the aside section 1*/
+
+  .artist-header {
+    height: 45vw;
+  }
+
+  .song-name {
+    font-size: 10px;
+  }
+  .artist-name {
+    font-size: 8px;
+  }
+  .followers {
+    font-size: 8px;
+    padding: 1px;
+  }
+  .descriptive-part {
+    padding: 2px;
+    font-size: 6px;
+  }
+  .btns button {
+    width: 40%;
+    height: 15px;
+    font-size: 8px;
+  }
+  .btns button:hover {
+    box-shadow: 0px 0px 5px 1px white;
+    font-size: 6px;
+  }
+  .ending-detail {
+    font-size: 6px;
+  }
+
+  /*adjustments for the aside section 2*/
+
+  .section2 {
+    width: 250px;
+    height: 70vh;
+  }
+  /*adustments for the footer section */
+
+  .song-desc {
+    width: 35%;
+  }
+  .heart-and-ban-icon {
+    display: none;
+  }
+  .current-song-img img {
+    width: 50px;
+    height: 50px;
+  }
+  .album-name {
+    font-size: 12px;
+  }
+  .composer {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .controls div:nth-child(1) {
+    display: none;
+  }
+  .controls div:nth-child(5) {
+    display: none;
+  }
+  .time {
+    font-size: 10px;
+  }
+
+  .other-icons {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

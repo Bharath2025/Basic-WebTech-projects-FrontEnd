@@ -1,0 +1,382 @@
+/* main-page -responsive.css */
+/* This page contains all the necessary media quiries for the main page ie index.html */
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+/* These are the media quires at the breakpoint for the desktop ie 992px */
+/* Entire Website should not break at >992px . (Desktop View)*/
+
+/* These are the media quires at the breakpoint for the Tablet ie <992px and <600px */
+/* Website should not break at <992px and >600px. (Tablet View) */
+
+@media screen and (max-width: 992px) {
+  /* The first thing is to hide the aside section2 and providing a more icon to view that */
+  label[for="more"] {
+    display: flex;
+    cursor: pointer;
+  }
+  /*hidding the aside section 2 */
+  .section2 {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    height: 70vh;
+    background-image: url("media/background gradient2.png");
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 2px 2px white;
+    top: 20%;
+    right: 0px;
+    z-index: 5;
+    overflow: scroll;
+    padding-left: 10px;
+    transition: visibility ease-in-out 0.2s;
+    transition: opacity ease-in-out 0.2s;
+  }
+  .playlist-item {
+    overflow: visible;
+  }
+  /* re-adjusted the queue options box */
+  .Queue-options {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 7%;
+    right: 2%;
+    z-index: 6;
+  }
+  /* more button */
+  input[id="more"]:checked ~ .section2 {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* To hide the scroll bar of section 2*/
+  /*.section2::-webkit-scrollbar{
+		display:none;
+	}*/
+
+  /* when the section 2 is hidden, section1 width becomes 100% to cover the whole page */
+  .section1 {
+    width: 100%;
+  }
+  /*adjustments to the carousel section*/
+  .carousel img:hover {
+    height: 20vh;
+    width: 25%;
+  }
+  /* adjustments to the latest-release section */
+  .latest-release-content > div {
+    width: 47%;
+    height: 80px;
+    margin: 5px 0px;
+  }
+  .img-sec img {
+    height: 80px;
+    width: 80px;
+  }
+  .details-sec p:nth-child(1) {
+    font-size: 16px;
+  }
+  .details-sec p:nth-child(2) {
+    font-size: 14px;
+  }
+  .options-sec p {
+    font-size: 16px;
+  }
+  /* adjustments to the popular artists section */
+  .artists p {
+    font-size: 15px;
+  }
+  /* adjustments to the themes section */
+  .themes-content img {
+    width: 80px;
+    height: 80px;
+  }
+  /* adjustments to the language sections */
+
+  .language-content div p:nth-child(2n) {
+    font-size: 15px;
+  }
+  .language-content div p:nth-child(2n + 1) {
+    font-size: 10px;
+  }
+}
+
+/* These are the media quires at the breakpoint for the mobile ie <600px */
+/* Website should not break at <600px. (Mobile View) */
+
+@media screen and (max-width: 600px) {
+  /* adjustments for the navigation section */
+  /* In this view iam hidding the favourites as well as notification section since they can access directly in mobile */
+  .navigation-bar > div:nth-child(2n) {
+    display: none;
+  }
+  .website-name p:nth-child(1) {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .website-name p:nth-child(2) {
+    font-size: 12px;
+    color: lightgrey;
+  }
+  .search-bar {
+    width: 30%;
+    height: auto;
+    position: relative;
+  }
+
+  /*adjustments for the aside section 1*/
+
+  /*adjustments for the carousel section */
+  .carousel img:hover {
+    height: 28%;
+    width: 25%;
+  }
+  /* adjustments to the latest-release section */
+  .latest-release-content > div {
+    width: 47%;
+    height: 75px;
+    margin: 5px 0px;
+  }
+  .img-sec img {
+    height: 75px;
+    width: 75px;
+  }
+  .details-sec p:nth-child(1) {
+    font-size: 14px;
+  }
+  .details-sec p:nth-child(2) {
+    font-size: 12px;
+  }
+  .options-sec p {
+    font-size: 13px;
+  }
+  /* adjustments to the popular artists section */
+  .artists div {
+    top: -107%;
+    right: 2%;
+  }
+  .artists div:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .artists p {
+    font-size: 12px;
+  }
+  /* adjustments to the themes section */
+  .themes-content {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+  .themes-content img {
+    width: 75px;
+    height: 75px;
+  }
+  .second-theme-container {
+    flex-wrap: nowrap;
+  }
+  .special-theme {
+    width: 30%;
+    height: 150px;
+  }
+  .special-theme img {
+    width: 100%;
+    height: 150px;
+  }
+  .special-theme p {
+    top: -103%;
+    height: 150px;
+  }
+  /*adjustments for the language section*/
+  .language-content > div {
+    width: 33.3%;
+    height: 150px;
+    margin: 1vw 0;
+  }
+  .language-content div img {
+    height: 75px;
+    width: 75px;
+    border-radius: 0.5rem;
+  }
+  /*adustments for the footer section */
+  .album-name {
+    font-size: 14px;
+  }
+  .composer {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .time {
+    font-size: 12px;
+  }
+  .player {
+    width: 50%;
+  }
+  .controls {
+    width: 60%;
+  }
+
+  /*here iam removing the audio slider because for mobile we will get the audio options as button */
+  .other-icons {
+    width: 10%;
+  }
+  .other-icons div:nth-child(2) {
+    display: none;
+  }
+  .other-icons div:nth-child(3) {
+    display: none;
+  }
+  .other-icons div:nth-child(4) {
+    display: none;
+  }
+  .other-icons div:nth-child(5) {
+    display: none;
+  }
+}
+
+/* These are the media quires at the breakpoint for the mobile ie <400px */
+/* for my mobile dimensions */
+
+@media screen and (max-width: 400px) {
+  /* adjustments for the navigation section */
+
+  .website-name p:nth-child(1) {
+    font-size: 10px;
+  }
+  .website-name p:nth-child(2) {
+    font-size: 8px;
+    color: lightgrey;
+  }
+  .search-bar {
+    height: 20px;
+  }
+  .search-bar input {
+    font-size: 10px;
+  }
+  /*adjustments for aside section 2*/
+  .section2::-webkit-scrollbar {
+    display: none;
+  }
+
+  /*adjustments for the aside section 1*/
+
+  /*adjustments for the carousel section */
+  .carousel img:hover {
+    height: 25%;
+    width: 23%;
+  }
+  /* adjustments to the latest-release section */
+  .latest-release-content > div {
+    width: 45%;
+    height: 50px;
+    margin: 5px 5px;
+  }
+  .img-sec img {
+    height: 50px;
+    width: 50px;
+  }
+  .details-sec {
+    margin: auto 5%; /*setting margin to auto will align the div to the center*/
+  }
+  .details-sec p:nth-child(1) {
+    font-size: 10px;
+  }
+  .details-sec p:nth-child(2) {
+    display: none;
+  }
+  .options-sec {
+    width: 20%;
+    padding: 5px;
+  }
+  .options-sec p {
+    font-size: 10px;
+  }
+  /* adjustments to the popular artists section */
+  .artists p {
+    font-size: 8px;
+  }
+  /* adjustments to the themes section */
+  #stations {
+    display: none;
+  }
+  #themes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+  }
+  .themes-content {
+    width: 30%;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .themes-content img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .themes-content p {
+    font-size: 10px;
+  }
+
+  .second-theme-container {
+    flex-wrap: nowrap;
+  }
+  .special-theme {
+    width: 30%;
+    height: 100px;
+  }
+  .special-theme img {
+    width: 100%;
+    height: 100px;
+  }
+  .special-theme p {
+    top: -105%;
+    height: 100px;
+    font-size: 15px;
+  }
+
+  /*adustments for the footer section */
+
+  .song-desc {
+    width: 35%;
+  }
+  .heart-and-ban-icon {
+    display: none;
+  }
+  .current-song-img img {
+    width: 50px;
+    height: 50px;
+  }
+  .album-name {
+    font-size: 12px;
+  }
+  .composer {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .controls div:nth-child(1) {
+    display: none;
+  }
+  .controls div:nth-child(5) {
+    display: none;
+  }
+  .time {
+    font-size: 10px;
+  }
+
+  .other-icons {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

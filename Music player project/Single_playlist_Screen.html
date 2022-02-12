@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <!-- viewport meta tag for the responsiveness of the web page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon implementation ie, for the icon in the tool-bar along with the title -->
+  <link rel="shortcut icon" type="image/x-icon" href="media/favicon.jpg" />
+  <title>PlayList</title>
+  <!--css links-->
+  <link rel="stylesheet" type="text/css" href="single_playlist.css"/>
+  <!-- A seperate css file for the media queries to get the better idea of responsive designs -->
+  <link rel="stylesheet" type="text/css" href="secondary_page_responsive.css" />
+  <!--font-awesome meta link for the font-awesome icons-->
+  <script
+    src="https://kit.fontawesome.com/6a68b98604.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<!--BODY SECTION-->
+
+<body>
+
+	<!--Body section is divided into 3 parts -->
+	<!-- 1.navigation section
+		 2.Main section
+		 3.Footer section -->
+	<!-- top navigation bar -->
+  <nav class="navigation-bar">
+    <!--This div contains the logo and title of the page-->
+    <div class="title-combo">
+      <div class="website-logo">
+        <img src="media/title-img.jpeg" />
+      </div>
+      <div class="website-name">
+        <p>
+          Bharath
+        </p>
+        <p>
+          Spotify
+        </p>
+      </div>
+    </div>
+    <!-- this is the animated favourites text -->
+    <div class="favs">
+      <h4>
+        Favourites
+      </h4>
+    </div>
+    <!-- this is for search bar -->
+    <div class="search-bar">
+      <div>
+        <!-- magnifying glass- search icon -->
+        <i class="fas fa-search search-ico"></i>
+      </div>
+      <input type="text" name="search" placeholder="Search" />
+      <div>
+        <!-- mic icon -->
+        <i class="fas fa-microphone mic-ico"></i>
+      </div>
+    </div>
+    <!-- this is for notification bell -->
+    <div class="notification-bell">
+      <i class="fas fa-bell fa-2x"></i>
+      <span style="font-size: 20px; font-weight: 600;">Notifications</span>
+      <!--In order to increase the size of the fontawsome icons we have to include the special classes of font-awesome ie fa-2x -->
+    </div>
+    <!-- this is for profile picture -->
+    <div class="profile">
+      <!--profile img is added directly as the background-imagein css file -->
+    </div>
+  </nav>
+  <!--main-->
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- This is the main section of the page divided into two sections namely section1 and section2 -->
+  <!-- I have divided each section using semantic tags ie aside tag -->
+  
+  <main>
+	<!--Aside section1 -->
+	<aside class="section1 aside">
+		<div class="artist-header">
+			<div class="artist-img">
+				<img src="media/popular-artists/anirudh.jpg">
+			</div>
+			<!-- description part of the artist -->
+			<div class="artist-desc">
+				<div class="heading-part">
+					<div>
+						<p class="song-name">Song Name</p>
+						<p class="artist-name">Anirudh</p>
+					</div>
+					<div>
+						<p class="followers">20M Followers</p>
+					</div>
+				</div>
+				<div class="descriptive-part">
+					<p>Anirudh Ravichander (born 16 October 1990), also known mononymously as Anirudh, is an Indian music composer and singer who primarily works in Tamil cinema. He is the son of veteran actor Ravi Raghavendra.[1] He has won two Filmfare Awards,[2] nine SIIMA Awards, six Edison Awards and five Vijay Awards.
+						</p>
+				</div>
+				<div class="ending-part">
+					<!-- buttons for follow and playall-->
+                        <div class="btns">
+                            <button type="button">Play All</button>
+							<button type="button">Follow</button>
+                        </div>
+                        <p class="ending-detail"> 200 Tracks | 50 Albums
+                        </p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="playlist">
+			<div class="playlist-content">
+				<div class="left-content">
+                        <div>
+                            01
+                        </div>
+                        <div>
+                            <img src="media/playlist/saaho.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Psycho Saiyaan
+                            </h5>
+                            <p>
+                                Saaho
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center-content">3:55</div>
+					
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+			</div>
+			<!--playlist item 2 -->
+			<div class="playlist-content">
+				<div class="left-content">
+                        <div>
+                            02
+                        </div>
+                        <div>
+                            <img src="media/playlist/master.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Vathi Coming
+                            </h5>
+                            <p>
+                                Master
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center-content">3:55</div>
+					
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+			</div>
+			<!--playlist item 3 -->
+			<div class="playlist-content">
+				<div class="left-content">
+                        <div>
+                            03
+                        </div>
+                        <div>
+                            <img src="media/playlist/dosti.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Dosti
+                            </h5>
+                            <p>
+                                RRR
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="center-content">3:55</div>
+					
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+			</div>
+			<!--playlist item 4 -->
+			<div class="playlist-content">
+				<div class="left-content">
+                        <div>
+                            04
+                        </div>
+                        <div>
+                            <img src="media/playlist/vathi raid.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Vathi Raid
+                            </h5>
+                            <p>
+                                Master
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center-content">3:55</div>
+					
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+			</div>
+			<!--playlist item 5 -->
+			<div class="playlist-content">
+				<div class="left-content">
+                        <div>
+                            05
+                        </div>
+                        <div>
+                            <img src="media/playlist/jersey.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Jersey Theme
+                            </h5>
+                            <p>
+                                Jersey
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="center-content">3:55</div>
+					
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+			</div>
+			<!--playlist item 6 -->
+			<div class="playlist-content">
+				<div class="left-content">
+                        <div>
+                            06
+                        </div>
+                        <div>
+                            <img src="media/playlist/beast.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Beast Title Song
+                            </h5>
+                            <p>
+                                Beast
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center-content">3:55</div>
+					
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+			</div>
+			<!--playlist item 7 -->
+			<div class="playlist-content">
+				<div class="left-content">
+                        <div>
+                            07
+                        </div>
+                        <div>
+                            <img src="media/playlist/vathi raid.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Vathi Coming
+                            </h5>
+                            <p>
+                                Master
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center-content">3:55</div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+			</div>
+			<!--playlist item 8 -->
+			<div class="playlist-content">
+				<div class="left-content">
+                        <div>
+                            08
+                        </div>
+                        <div>
+                            <img src="media/playlist/beast.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Beast 
+                            </h5>
+                            <p>
+                                Beast
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center-content">3:55</div>
+					
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+			</div>
+			<!--playlist item 9 -->
+			<div class="playlist-content">
+				<div class="left-content">
+                        <div>
+                            09
+                        </div>
+                        <div>
+                            <img src="media/playlist/saaho.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Psycho Saiyaan
+                            </h5>
+                            <p>
+                                Saaho
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center-content">3:55</div>
+					
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+			</div>
+			<!--playlist item 10 -->
+			<div class="playlist-content">
+				<div class="left-content">
+                        <div>
+                            10
+                        </div>
+                        <div>
+                            <img src="media/playlist/dosti.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Dosti
+                            </h5>
+                            <p>
+                                RRR
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center-content">3:55</div>
+					
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+			</div>
+			
+		</div>
+		<!-- playlist is completed -->
+		<!-- Not satisfied with the background gradient try to change after the completion of section 2-->
+		
+	</aside>
+	
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- This is the label for the more button which is hidden in desktop view -->
+	<!-- On entering into mobile or tablet view the section2 will be hidden and it can be accessed on checking the checkbox that is not visible but can be accessed using the more label-->
+	
+    <label for="more"><i class="fas fa-list-ul"></i></label>
+    <!-- adding a class fa-2x for bigger size of font-awesome icon -->
+    <input type="checkbox" id="more" >
+	
+	<aside class="aside section2">
+            <!-- similar class will be applicable to both similar artists and recently played -->
+            <div class="similar">
+                <!-- section heading, which also contains the view all button -->
+                <div class="section-heading">
+                        <h3>Similar Artists</h3>
+                        <div class="btns">
+                            <button type="button">View</button>
+                        </div>
+                </div>
+                <!-- list is the container for the contents of similar artists -->
+                <div class="list">
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="media/popular-artists/arjit singh.jpg">
+                            <div class="play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Love
+                            </h5>
+                            <p class="author-name">
+                                Arjith Singh
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                2:14
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="media/popular-artists/drake.jpg">
+                            <div class="play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Rap
+                            </h5>
+                            <p class="author-name">
+                                Drake
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:00
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="media/popular-artists/jubin.jpg">
+                            <div class="play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Party
+                            </h5>
+                            <p class="author-name">
+                                Jubin
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- recently played section -->
+                <div class="similar">
+                    <!-- section headings, which also contains the view all button -->
+                    <div class="section-heading">
+                        <h3>Recently Played</h3>
+                        <div class="btns">
+                            <button type="button">View</button>
+                        </div>
+                    </div>
+                    <!-- again list is a container for all the contents of recently played section -->
+                    <div class="list">
+                        <!--playlist-content 1-->
+                        <div class="playlist-content">
+                            <div class="left-content">
+                                <div>
+                                    01
+                                </div>
+                                <div>
+                                    <img src="media/latest-hindi-telugu/rrr.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        RRR
+                                    </h5>
+                                    <p>
+                                        Nacho Nacho
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+						<!--playlist-content 2-->
+                        <div class="playlist-content">
+                            <div class="left-content">
+                                <div>
+                                    02
+                                </div>
+                                <div>
+                                    <img src="media/latest-hindi-telugu/rrr.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        RRR
+                                    </h5>
+                                    <p>
+                                        Nacho Nacho
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+						
+						<!--playlist-content 3-->
+                        <div class="playlist-content">
+                            <div class="left-content">
+                                <div>
+                                    03
+                                </div>
+                                <div>
+                                    <img src="media/latest-hindi-telugu/rrr.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        RRR
+                                    </h5>
+                                    <p>
+                                        Nacho Nacho
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+						
+						<!--playlist-content 4-->
+                        <div class="playlist-content">
+                            <div class="left-content">
+                                <div>
+                                    04
+                                </div>
+                                <div>
+                                    <img src="media/latest-hindi-telugu/rrr.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        RRR
+                                    </h5>
+                                    <p>
+                                        Nacho Nacho
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+						
+						<!--playlist-content 5-->
+                        <div class="playlist-content">
+                            <div class="left-content">
+                                <div>
+                                    05
+                                </div>
+                                <div>
+                                    <img src="media/latest-hindi-telugu/rrr.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        RRR
+                                    </h5>
+                                    <p>
+                                        Nacho Nacho
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+						
+						<!--playlist-content 6-->
+                        <div class="playlist-content">
+                            <div class="left-content">
+                                <div>
+                                    06
+                                </div>
+                                <div>
+                                    <img src="media/latest-hindi-telugu/rrr.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        RRR
+                                    </h5>
+                                    <p>
+                                        Nacho Nacho
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+						
+						<!--playlist-content 7-->
+                        <div class="playlist-content">
+                            <div class="left-content">
+                                <div>
+                                    07
+                                </div>
+                                <div>
+                                    <img src="media/latest-hindi-telugu/rrr.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        RRR
+                                    </h5>
+                                    <p>
+                                        Nacho Nacho
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+						
+						<!--playlist-content 8-->
+                        <div class="playlist-content">
+                            <div class="left-content">
+                                <div>
+                                    08
+                                </div>
+                                <div>
+                                    <img src="media/latest-hindi-telugu/rrr.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Nacho Nacho
+                                    </h5>
+                                    <p>
+                                        RRR
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+						
+						<!--playlist-content 9-->
+                        <div class="playlist-content">
+                            <div class="left-content">
+                                <div>
+                                    09
+                                </div>
+                                <div>
+                                    <img src="media/latest-hindi-telugu/rrr.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        RRR
+                                    </h5>
+                                    <p>
+                                        Nacho Nacho
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+						
+						<!--playlist-content 10-->
+                        <div class="playlist-content">
+                            <div class="left-content">
+                                <div>
+                                    10
+                                </div>
+                                <div>
+                                    <img src="media/latest-hindi-telugu/rrr.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        RRR
+                                    </h5>
+                                    <p>
+                                        Nacho Nacho
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </aside>
+  </main>
+  
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- footer part -->
+  <!--The footer is fixed to the screen bottom-->
+  <footer>
+    <div class="song-desc">
+      <!--current song image -->
+      <div class="current-song-img">
+        <img src="media/sample music.jpg" />
+      </div>
+      <!--current song album and composer name -->
+      <div class="current-song-desc">
+        <p class="album-name">Bhaubali</p>
+        <p class="composer">M M keeravani</p>
+      </div>
+      <!-- heart and ban icons -->
+      <div class="heart-and-ban-icon">
+        <span>
+          <i class="far fa-heart"></i>
+        </span>
+        <span>
+          <i class="fas fa-ban"></i>
+        </span>
+      </div>
+    </div>
+    <!-- Music player controls -->
+    <div class="player">
+      <div class="controls">
+        <div><i class="fas fa-random"></i></div>
+        <div><i class="fas fa-step-backward"></i></div>
+        <div><i class="fas fa-pause-circle"></i></div>
+        <div><i class="fas fa-step-forward"></i></div>
+        <div><i class="fas fa-redo"></i></div>
+      </div>
+      <div class="audio-container">
+        <div class="time">1:15</div>
+        <div class="slide-container">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="20"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+        <div class="time">4:33</div>
+      </div>
+    </div>
+    <div class="other-icons">
+      <!-- other icons for the volume slider and expand -->
+      <div>
+        <i class="fas fa-list-ul"></i>
+      </div>
+      <div>
+        <i class="fas fa-calendar-day"></i>
+      </div>
+      <div>
+        <i class="fas fa-volume-up"></i>
+      </div>
+      <div class="slide-container" style="width: 30%;">
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="slider"
+          id="myRange"
+          style="margin-top: 0px;"
+        />
+      </div>
+      <div>
+        <i class="fas fa-expand-alt"></i>
+      </div>
+    </div>
+  </footer>
+
+</body>

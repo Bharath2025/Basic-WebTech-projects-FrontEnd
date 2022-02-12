@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <!-- viewport meta tag for the responsiveness of the web page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon implementation ie, for the icon in the tool-bar along with the title -->
+  <link rel="shortcut icon" type="image/x-icon" href="media/favicon.jpg" />
+  <title>MB Spotify</title>
+  <!--css links-->
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <!-- A seperate css file for the media queries to get the better idea of responsive designs -->
+  <link rel="stylesheet" type="text/css" href="main page responsive.css" />
+  <!--font-awesome meta link for the font-awesome icons-->
+  <script
+    src="https://kit.fontawesome.com/6a68b98604.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<!--BODY SECTION-->
+
+<body>
+  <!-- navigation part-->
+  <!-- top navigation bar -->
+  <nav class="navigation-bar">
+    <!--This div contains the logo and title of the page-->
+    <div class="title-combo">
+      <div class="website-logo">
+        <img src="media/title-img.jpeg" />
+      </div>
+      <div class="website-name">
+        <p>
+          Bharath
+        </p>
+        <p>
+          Spotify
+        </p>
+      </div>
+    </div>
+    <!-- this is the animated favourites text -->
+    <div class="favs">
+      <h4>
+        Favourites
+      </h4>
+    </div>
+    <!-- this is for search bar -->
+    <div class="search-bar">
+      <div>
+        <!-- magnifying glass- search icon -->
+        <i class="fas fa-search search-ico"></i>
+      </div>
+      <input type="text" name="search" placeholder="Search" />
+      <div>
+        <!-- mic icon -->
+        <i class="fas fa-microphone mic-ico"></i>
+      </div>
+    </div>
+    <!-- this is for notification bell -->
+    <div class="notification-bell">
+      <i class="fas fa-bell fa-2x"></i>
+      <span style="font-size: 20px; font-weight: 600;">Notifications</span>
+      <!--In order to increase the size of the fontawsome icons we have to include the special classes of font-awesome ie fa-2x -->
+    </div>
+    <!-- this is for profile picture -->
+    <div class="profile">
+      <!--profile img is added directly as the background-imagein css file -->
+    </div>
+  </nav>
+  <!--main-->
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- This is the main section of the page divided into two sections namely section1 and section2 -->
+  <!-- I have divided each section using semantic tags ie aside tag -->
+  <main>
+    <!-- aside section 1 -->
+    <aside class="section1 aside">
+      <!-- This is the carousel section of the main section -->
+      <div class="outer-carousel">
+        <div class="carousel">
+          <img src="media/carousel1.jpg" />
+          <img src="media/carousel2.jpg" />
+          <img src="media/carousel3.jpg" />
+        </div>
+      </div>
+
+      <!-- Latest release section -->
+      <div class="latest-release">
+        <h4
+          style="
+            text-align: center;
+            margin-bottom: 20px;
+            animation-name: special-effect;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+          "
+        >
+          Latest Release
+        </h4>
+
+        <div class="latest-release-content">
+          <!-- latest release-item no 1 -->
+          <div class="release-item">
+            <div class="img-sec">
+              <!-- image of the release item -->
+              <img src="media/latest-release/pushpa.jpg" />
+              <!-- Play button icon which will be displayed on hover on the image -->
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="details-sec">
+              <p>
+                Pushpa The Rise
+              </p>
+              <p>
+                Dec , 2021
+              </p>
+            </div>
+            <div class="options-sec">
+              <label for="checkbox-options"
+                ><i class="fas fa-ellipsis-h"></i
+              ></label>
+              <input type="checkbox" id="checkbox-options" />
+              <!-- div for the checkbox that has to be popup when the checkbox is marked -->
+              <div class="latest-release-popup">
+                <div class="popup">
+                  <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                  <p>
+                    <i class="fas fa-play-circle"></i> <a href="">Play Now</a>
+                  </p>
+                </div>
+                <hr />
+                <div class="popup">
+                  <p><i class="fas fa-arrow-circle-right"></i> Play Next</p>
+                </div>
+                <hr />
+                <div class="popup">
+                  <p><i class="far fa-heart"></i> Add to Favourites</p>
+                </div>
+                <hr />
+                <div class="popup">
+                  <p><i class="fas fa-info-circle"></i> More Info</p>
+                </div>
+              </div>
+              <!-- duration of the song -->
+              <p>
+                3:35
+              </p>
+            </div>
+          </div>
+          <!-- latest release-item no 2 -->
+          <div class="release-item">
+            <div class="img-sec">
+              <!-- image of the release item -->
+              <img src="media/latest-release/rrr.jpg" />
+              <!-- Play button icon which will be displayed on hover on the image -->
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="details-sec">
+              <p>
+                R R R
+              </p>
+              <p>
+                Apr , 2022
+              </p>
+            </div>
+            <div class="options-sec">
+              <label for="checkbox-options"
+                ><i class="fas fa-ellipsis-h"></i
+              ></label>
+              <input type="checkbox" id="checkbox-options" />
+              <!-- div for the checkbox that has to be popup when the checkbox is marked -->
+              <div class="latest-release-popup">
+                <div class="popup">
+                  <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                  <p>
+                    <i class="fas fa-play-circle"></i> <a href="">Play Now</a>
+                  </p>
+                  <hr />
+                  <p><i class="fas fa-arrow-circle-right"></i> Play Next</p>
+                  <hr />
+                  <p><i class="far fa-heart"></i> Add to Favourites</p>
+                  <hr />
+                  <p><i class="fas fa-info-circle"></i> More Info</p>
+                </div>
+              </div>
+              <!-- duration of the song -->
+              <p>
+                4:02
+              </p>
+            </div>
+          </div>
+          <!-- latest release-item no 3 -->
+          <div class="release-item">
+            <div class="img-sec">
+              <!-- image of the release item -->
+              <img src="media/latest-release/radhe shyam.jpg" />
+              <!-- Play button icon which will be displayed on hover on the image -->
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="details-sec">
+              <p>
+                Radhe Shyam
+              </p>
+              <p>
+                Mar , 2022
+              </p>
+            </div>
+            <div class="options-sec">
+              <label for="checkbox-options"
+                ><i class="fas fa-ellipsis-h"></i
+              ></label>
+              <input type="checkbox" name="options" id="checkbox-options" />
+              <!-- div for the checkbox that has to be popup when the checkbox is marked -->
+              <div class="latest-release-popup">
+                <div class="popup">
+                  <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                  <p>
+                    <i class="fas fa-play-circle"></i> <a href="">Play Now</a>
+                  </p>
+                  <hr />
+                  <p><i class="fas fa-arrow-circle-right"></i> Play Next</p>
+                  <hr />
+                  <p><i class="far fa-heart"></i> Add to Favourites</p>
+                  <hr />
+                  <p><i class="fas fa-info-circle"></i> More Info</p>
+                </div>
+              </div>
+              <!-- duration of the song -->
+              <p>
+                3:40
+              </p>
+            </div>
+          </div>
+          <!-- latest release-item no 4 -->
+          <div class="release-item">
+            <div class="img-sec">
+              <!-- image of the release item -->
+              <img src="media/latest-release/kgf.jpg" />
+              <!-- Play button icon which will be displayed on hover on the image -->
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="details-sec">
+              <p>
+                K G F
+              </p>
+              <p>
+                Apr , 2022
+              </p>
+            </div>
+            <div class="options-sec">
+              <label for="checkbox-options"
+                ><i class="fas fa-ellipsis-h"></i
+              ></label>
+              <input type="checkbox" name="options" id="checkbox-options" />
+              <!-- div for the checkbox that has to be popup when the checkbox is marked -->
+              <div class="latest-release-popup">
+                <div class="popup">
+                  <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                  <p>
+                    <i class="fas fa-play-circle"></i> <a href="">Play Now</a>
+                  </p>
+                  <hr />
+                  <p><i class="fas fa-arrow-circle-right"></i> Play Next</p>
+                  <hr />
+                  <p><i class="far fa-heart"></i> Add to Favourites</p>
+                  <hr />
+                  <p><i class="fas fa-info-circle"></i> More Info</p>
+                </div>
+              </div>
+              <!-- duration of the song -->
+              <p>
+                4:15
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular Artist section -->
+      <div class="popular-artists">
+        <div>
+          <h4 style="text-align: left; margin-bottom: 20px;">
+            Popular Artists
+          </h4>
+        </div>
+        <div class="popular-artists-container">
+          <!-- this is the popular-artists container -->
+          <!-- each div is acting as an anchor tag which will redirect
+						to the Single playlist screen of another HTML page -->
+          <!-- Artist no 1 -->
+          <div class="artists">
+            <a href="Single_playlist_Screen.html">
+              <img src="media/popular-artists/drake.jpg" />
+              <div><i class="fas fa-play"></i></div>
+              <p>Drake</p>
+            </a>
+          </div>
+          <!-- Artist no 2 -->
+          <div class="artists">
+            <a href="Single_playlist_Screen.html">
+              <img src="media/popular-artists/shreya ghoshal.jpg" />
+              <div><i class="fas fa-play"></i></div>
+              <p>Shreya Goshal</p>
+            </a>
+          </div>
+          <!-- Artist no 3 -->
+          <div class="artists">
+            <a href="Single_playlist_Screen.html">
+              <img src="media/popular-artists/arjit singh.jpg" />
+              <div><i class="fas fa-play"></i></div>
+              <p>Arjit Singh</p>
+            </a>
+          </div>
+          <!-- Artist no 4 -->
+          <div class="artists">
+            <a href="Single_playlist_Screen.html">
+              <img src="media/popular-artists/arman malik.jpg" />
+              <div><i class="fas fa-play"></i></div>
+              <p>Arman Malik</p>
+            </a>
+          </div>
+          <!-- Artist no 5 -->
+          <div class="artists">
+            <a href="Single_playlist_Screen.html">
+              <img src="media/popular-artists/camila cabello.jpg" />
+              <div><i class="fas fa-play"></i></div>
+              <p>Camila Cabello</p>
+            </a>
+          </div>
+          <!-- Artist no 6 -->
+          <div class="artists">
+            <a href="Single_playlist_Screen.html">
+              <img src="media/popular-artists/anirudh.jpg" />
+              <div><i class="fas fa-play"></i></div>
+              <p>Anirudh</p>
+            </a>
+          </div>
+          <!-- Artist no 7 -->
+          <div class="artists">
+            <a href="Single_playlist_Screen.html">
+              <img src="media/popular-artists/jubin.jpg" />
+              <div><i class="fas fa-play"></i></div>
+              <p>Jubin Nautiyal</p>
+            </a>
+          </div>
+          <!-- Artist no 8 -->
+          <div class="artists">
+            <a href="Single_playlist_Screen.html">
+              <img src="media/popular-artists/sid sriram.jpg" />
+              <div><i class="fas fa-play"></i></div>
+              <p>Sid Sriram</p>
+            </a>
+          </div>
+          <!-- Artist no 9 -->
+          <div class="artists">
+            <a href="Single_playlist_Screen.html">
+              <img src="media/popular-artists/neha kakkar.jpg" />
+              <div><i class="fas fa-play"></i></div>
+              <p>Neha Kakkar</p>
+            </a>
+          </div>
+          <!-- Artist no 10 -->
+          <div class="artists">
+            <a href="Single_playlist_Screen.html">
+              <img src="media/popular-artists/justin bieber.jpg" />
+              <div><i class="fas fa-play"></i></div>
+              <p>Justin Bieber</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Popular artist section is finished -->
+      <!-- Music themes section -->
+      <!-- This section is divided into 2 parts with different themes -->
+      <div class="music-themes">
+        <!-- This div contains the stations part and different themes like rock,pop,love,retro etc... -->
+        <div class="first-theme-container">
+          <!-- Station section with nested divs -->
+          <div id="stations">
+            <div id="div1">
+              <div id="div2">
+                <div id="div3">
+                  <img src="media/station.jpg" />
+                  <p>Stations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Themes section -->
+          <div id="themes">
+            <div class="themes-content">
+              <img src="media/music-themes/gym.jpg" />
+              <p style="text-align: center;">Gym</p>
+            </div>
+            <div class="themes-content">
+              <img src="media/music-themes/love.jpg" />
+              <p style="text-align: center;">Love</p>
+            </div>
+            <div class="themes-content">
+              <img src="media/music-themes/rock.jpg" />
+              <p style="text-align: center;">Rock</p>
+            </div>
+            <div class="themes-content">
+              <img src="media/music-themes/retro.jpg" />
+              <p style="text-align: center;">Retro</p>
+            </div>
+            <div class="themes-content">
+              <img src="media/music-themes/vibe.jpg" />
+              <p style="text-align: center;">Vibe</p>
+            </div>
+            <div class="themes-content">
+              <img src="media/music-themes/pop.jpg" />
+              <p style="text-align: center;">Pop</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Themes section 2 contains travel,party,electronic themes -->
+        <div class="second-theme-container">
+          <div class="special-theme">
+            <img src="media/music-themes/party.jpg" />
+            <p>Party</p>
+          </div>
+          <div class="special-theme">
+            <img src="media/music-themes/road trip.jpg" />
+            <p>Road Trip</p>
+          </div>
+          <div class="special-theme">
+            <img src="media/music-themes/electronic.jpg" />
+            <p>Electronic</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Themes section has been completed -->
+      <!-- Last section of the aside section 1-->
+      <!-- Language section -->
+      <!-- This section is same in implementation for diff languages so classes will be same to reduce redundancy -->
+      <div class="language">
+        <!-- Language section for the latest Hindi Songs -->
+        <h4 style="margin-left: 10px;">Latest Hindi</h4>
+        <div class="language-content">
+          <div>
+            <img src="media/latest-hindi-telugu/83.jpg" />
+            <p>83</p>
+            <p>Jan 2022</p>
+          </div>
+          <div>
+            <img src="media/latest-hindi-telugu/pushpa.jpg" />
+            <p>Pushpa</p>
+            <p>Jan 2022</p>
+          </div>
+          <div>
+            <img src="media/latest-hindi-telugu/radheshyam.jpg" />
+            <p>Radhe Shyam</p>
+            <p>Jan 2022</p>
+          </div>
+          <div>
+            <img src="media/latest-hindi-telugu/rrr.jpg" />
+            <p>RRR</p>
+            <p>Jan 2022</p>
+          </div>
+          <div>
+            <img src="media/latest-hindi-telugu/Jersey.jpg" />
+            <p>Jersy</p>
+            <p>Jan 2022</p>
+          </div>
+          <div>
+            <img src="media/latest-hindi-telugu/antim.jpg" />
+            <p>Antim</p>
+            <p>Jan 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="language">
+        <!-- Language section for the latest Hindi Songs -->
+        <h4 style="margin-left: 10px;">Latest Telugu</h4>
+        <div class="language-content">
+          <div>
+            <img src="media/latest-hindi-telugu/rrr.jpg" />
+            <p>R R R</p>
+            <p>Jan 2022</p>
+          </div>
+          <div>
+            <img src="media/latest-hindi-telugu/acharya.jpg" />
+            <p>Acharya</p>
+            <p>Jan 2022</p>
+          </div>
+          <div>
+            <img src="media/latest-hindi-telugu/bheemla nayak.jpg" />
+            <p>Bheemla Nayak</p>
+            <p>Jan 2022</p>
+          </div>
+          <div>
+            <img src="media/latest-hindi-telugu/svp.jpg" />
+            <p>SVP</p>
+            <p>Jan 2022</p>
+          </div>
+          <div>
+            <img src="media/latest-hindi-telugu/pushpa.jpg" />
+            <p>Pushpa</p>
+            <p>Jan 2022</p>
+          </div>
+          <div>
+            <img src="media/latest-hindi-telugu/radheshyam.jpg" />
+            <p>Radhe Shyam</p>
+            <p>Jan 2022</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- This is the label for the more button which is hidden in desktop view -->
+	<!-- On entering into mobile or tablet view the section2 will be hidden and it can be accessed on checking the checkbox that is not visible but can be accessed using the more label-->
+	
+    <label for="more"><i class="fas fa-list-ul fa-2x"></i></label>
+    <!-- adding a class fa-2x for bigger size of font-awesome icon -->
+    <input type="checkbox" id="more" />
+    <!-- Aside section 2 -->
+    <aside class="section2 aside">
+      <header class="title">
+        <h1>Playlists</h1>
+        <h3>
+          <a href="#Queue-options-box"
+            >Queue <i class="fas fa-hand-point-down"></i
+          ></a>
+        </h3>
+      </header>
+      <div id="Queue-options-box" class="Queue-options">
+        <p><a href="Single_playlist_Screen.html" style="color: black; font-size: 15px;">Playlist</a></p>
+        <p><a href="Single_playlist_Screen.html" style="color: black; font-size: 15px;">Favourites</a></p>
+        <p><a href="#" style="color: red;">Exit</a></p>
+      </div>
+      <div class="playlist-container">
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              01
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <!--playlist-item 2 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              02
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Playlist-item 3 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              03
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Playlist-item 4 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              04
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Playlist-item 5 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              05
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Playlist-item 6 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              06
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Playlist-item 7 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              07
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Playlist-item 8 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              08
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Playlist-item 9 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              09
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Playlist-item 10 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              10
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Playlist-item 11 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              11
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- Playlist-item 12 -->
+        <div class="playlist-item">
+          <!-- left side content consists of item number,image,ablum-author -->
+          <div class="left-side-content">
+            <div style="margin-right: 4px;">
+              12
+            </div>
+            <div class="coverer">
+              <img src="media/sample music.jpg" />
+              <div><i class="fas fa-play"></i></div>
+            </div>
+            <!-- album name and singer -->
+            <div>
+              <p>Bhaubali</p>
+              <p>M M Keeravani</p>
+            </div>
+          </div>
+          <!-- right side content is like icon -->
+          <div class="right-side-content">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- footer part -->
+  <!--The footer is fixed to the screen bottom-->
+  <footer>
+    <div class="song-desc">
+      <!--current song image -->
+      <div class="current-song-img">
+        <img src="media/sample music.jpg" />
+      </div>
+      <!--current song album and composer name -->
+      <div class="current-song-desc">
+        <p class="album-name">Bhaubali</p>
+        <p class="composer">M M keeravani</p>
+      </div>
+      <!-- heart and ban icons -->
+      <div class="heart-and-ban-icon">
+        <span>
+          <i class="far fa-heart"></i>
+        </span>
+        <span>
+          <i class="fas fa-ban"></i>
+        </span>
+      </div>
+    </div>
+    <!-- Music player controls -->
+    <div class="player">
+      <div class="controls">
+        <div><i class="fas fa-random"></i></div>
+        <div><i class="fas fa-step-backward"></i></div>
+        <div><i class="fas fa-pause-circle"></i></div>
+        <div><i class="fas fa-step-forward"></i></div>
+        <div><i class="fas fa-redo"></i></div>
+      </div>
+      <div class="audio-container">
+        <div class="time">1:15</div>
+        <div class="slide-container">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="20"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+        <div class="time">4:33</div>
+      </div>
+    </div>
+    <div class="other-icons">
+      <!-- other icons for the volume slider and expand -->
+      <div>
+        <i class="fas fa-list-ul"></i>
+      </div>
+      <div>
+        <i class="fas fa-calendar-day"></i>
+      </div>
+      <div>
+        <i class="fas fa-volume-up"></i>
+      </div>
+      <div class="slide-container" style="width: 30%;">
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="slider"
+          id="myRange"
+          style="margin-top: 0px;"
+        />
+      </div>
+      <div>
+        <i class="fas fa-expand-alt"></i>
+      </div>
+    </div>
+  </footer>
+</body>

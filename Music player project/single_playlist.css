@@ -1,0 +1,699 @@
+:root {
+  /* Trying for diff kinds of background */
+  --background-image: url("media/background gradient.jpg");
+  --background-image1:url('media/background gradient1.jpg');   /*using the background as gradient for the playlist section*/
+  --background-image2:url('media/background gradient2.png');
+  --background-image3:url('media/background gradient3.png');    
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px;
+  color: white;
+}
+/* removing margin for all the textual elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+/* removing all the styles from the links and formatting them white */
+a {
+  text-decoration: none;
+  color: white;
+}
+/*////////////////////////////////////////////////////*/
+/*Navigation Section Starts Here*/
+/* Navigation Section */
+
+.navigation-bar {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+}
+/* All the divs inside the nav section are inline */
+.navigation-bar > div {
+  display: inline-block;
+}
+/*animation for the website-logo*/
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.title-combo > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.website-logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  animation-name: rotating;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.website-name p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+.website-name p:nth-child(2) {
+  font-size: 15px;
+  color: lightgrey;
+}
+
+/*favourites section*/
+/*animation for favs section*/
+@keyframes special-effect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scalex(1);
+  }
+}
+.favs {
+  animation-name: special-effect;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  perspective: 10000px;
+  transform-style: preserve-3d;
+}
+/*search-box section*/
+
+.search-bar {
+  width: 20%;
+  height: auto;
+  position: relative;
+}
+.search-bar input {
+  width: 100%;
+  border: none;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 2px 2px white;
+  text-align: center;
+  padding: 3px;
+  transition: all ease-in-out 0.1s;
+}
+.search-bar div:nth-child(1) {
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  color: rgba(0, 0, 0, 0.5);
+}
+.search-bar div:nth-child(3) {
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*when user clicks on the seach bar there should not be any border or outling should be appear */
+input:focus {
+  outline: none;
+}
+
+/*notification icon section*/
+@keyframes bell {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.notification-bell i {
+  animation-name: bell;
+  animation-timing-function: all ease-in-out;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+/*profile section*/
+
+.profile {
+  height: 50px;
+  width: 50px;
+  background-image: url("media/profile.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+/* Navigation header Section is completed */
+/*/////////////////////////////////////////////////////////*/
+
+/*footer section*/
+footer {
+  position: absolute;
+  bottom: 1px;
+  height: 60px;
+  width: 100%;
+  background-image: linear-gradient(180deg, black, grey);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+  z-index: 6;
+}
+
+/*Now this footer is divided into 3 diff sections */
+/* 1. first part of the footer ie about the image and the song description.*/
+.song-desc {
+  width: 28%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.current-song-img img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  box-shadow: 0px 0px 2px 2px white;
+}
+.current-song-desc {
+  margin-right: 5px;
+}
+.album-name {
+  font-size: 18px;
+}
+.composer {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.heart-and-ban-icon {
+  padding: 2%;
+}
+.heart-and-ban-icon i:hover {
+  animation-name: loved;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+/* 2. Second part of the footer about the controls of the audio-player.*/
+.player {
+  height: 100%;
+  width: 45%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.controls {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.audio-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.slide-container {
+  width: 100%;
+}
+
+.time {
+  margin: 0px 10px;
+}
+/* for audio and main center player */
+.slider {
+  -webkit-appearance: yellow;
+  width: 100%;
+  height: 5px;
+  background: lightgrey;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+/* hover effect for the slider */
+.slider:hover {
+  opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+/* 3. Third part of the footer for other extra icons*/
+.other-icons {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Main Section */
+main{
+	width:100%;
+	height:auto;
+	box-sizing:border-box;
+	padding: 1% 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: all ease-in-out 1s;
+}
+.aside{
+	display:inline-block;
+	overflow: hidden;
+}
+.section1{
+	width: 65%;
+	height:80vh;
+	overflow:scroll;
+}
+.section1::-webkit-scrollbar{
+	display:none;
+}
+.section2{
+	width:27%;
+	height:80vh;
+	z-index:2;
+}
+/* Aside section 1 */
+
+.artist-header{
+	position:relative;
+	height:20vw;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	margin-bottom:30px;
+	box-sizing:border-box;
+	padding:1%;
+	background-image:url('media/background gradient2.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	border-radius:0.5rem;
+}
+
+.artist-img{
+	width:30%;
+	height:inherit;
+}
+.artist-img img{
+	position:relative;
+	top:10%;
+	left:10%;
+	width:80%;
+	height:80%;
+}
+.artist-img img:hover{
+	box-shadow:0px 0px 2px 2px white;
+	border-radius:5px;
+}
+.artist-desc{
+	width:68%;
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+}
+.heading-part{
+	width:100%;
+	height:20%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.song-name{
+	font-size:25px;
+	font-weight:bold;
+	color:black;
+}
+.artist-name{
+	font-size:20px;
+	color:grey;
+	font-weight:bold;
+}
+.followers{
+	font-size:15px;
+	border-radius:1rem;
+	text-align:center;
+	padding:5px;
+}
+.followers:hover{
+	background-color:white;
+	color:black;
+	box-shadow:0px 0px 2px 2px white;
+	font-weight:bold;
+}
+.descriptive-part{
+	padding:10px;
+	font-size:15px;
+	color:grey;
+	font-weight:bold;
+}
+.ending-part{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.ending-detail{
+	margin-top:10px;
+	color:black;
+	font-size:15px;
+}
+
+.btns{
+	width:60%;
+	height:auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+}
+.btns button{
+	width:30%;
+	height:30px;
+	border-radius:5px;
+	font-weight:bold;
+	font-size:15px;
+}
+.btns button:hover{
+	box-shadow:0px 0px 5px 1px white;
+	font-size:15px;
+}
+.btns button:nth-child(1){
+	outline:none;
+	border:none;
+	background-image:linear-gradient(120deg,red 0%,yellow 100%);
+	cursor:pointer;
+}
+.btns button:nth-child(2){
+	outline:none;
+	border:none;
+	background-color:transparent;
+	cursor:pointer;
+}
+/*header part of the section1 is completed */
+
+/*Playlist section*/
+.playlist{
+	position:relative;
+	height:auto;
+	width:100%;
+}
+.playlist-content{
+	/* height:60px;*/
+    width:100%; 
+	height: 8vh;
+	box-sizing: border-box;
+	background-image:var(--background-image1); 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+	border-radius:0.5rem;
+}
+/* playlist item hovering effects */
+.playlist-content:hover {
+	box-shadow:0px 0px 2px 2px white;
+}
+/* left part if the playlist item */
+.left-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	padding: 0% 1%;
+	color:white;
+}
+/* center part of the playlist item which contains the duration length of the song */
+.center-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: min-content;
+	height: 100%;
+}
+/* right part of the playlist item, which contains icons */
+.right-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 100%;
+	padding-right: 2%;
+}
+
+/* now adjusting the contents of left, center and right parts */
+.left-content > div:nth-child(2) {
+	height: 80%;
+	min-width: 50px;
+	max-width: 50px;
+	margin: 0px 10% 0px 12%;
+	position: relative;
+}
+
+.left-content > div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+}
+.left-content > div:nth-child(3) p {
+	color: white;
+}
+.center-content {
+	font-size: 12px;
+	color: white;
+}
+.right-content {
+	color: white;
+}
+.right-content div:nth-child(2) {
+	margin-left: 27%;
+}
+/* adjusting the play button for the playlist item */
+.play-btn {
+	background-color: lightgrey;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	opacity: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: all ease-in-out 0.1s;
+}
+/* on hover effects */
+.play-btn:hover {
+	opacity: 1;
+	color:white;
+}
+/* adjusting fonts in the playlist items  */
+.left-content div p {
+	font-size: 14px;
+}
+
+/* Aside section 1 is completed */
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* "more" button properties */
+/* More button for the section 2*/
+label[for="more"] {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  padding-bottom: 5px;
+  z-index: 4;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+}
+/* when the checkbox corresponding to the "more" button is checked, then the section becomes visible */
+/* but at a normal resolution, its display will be none */
+label[for="more"]:checked ~ input {
+  display: none;
+}
+
+/* Aside section 2 */
+
+/* this is the first section heading of the aside section 2 */
+
+.section-heading {
+	position: relative;
+	height:50px;
+	width:100%;
+}
+/* adjusting for side by side display */
+.section-heading div,.section-heading h1 {
+	display: inline-block;
+}
+.section-heading h1 {
+	font-size: 23px;
+}
+.section-heading div {
+	position: relative;
+	top: -30%;
+	left:70%;
+	font-size: 13px;
+}
+
+.list {
+	height: 35vh;
+	overflow: scroll;
+}
+/* hiding the scrollbar */
+.list::-webkit-scrollbar {
+	display: none;
+}
+/* this is particular item in the "list  container*/
+.list-item {
+	width: 100%;
+	height: 90px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-bottom: 12px;
+	background-image:var(--background-image1);
+	border-radius:0.5rem;
+}
+/* hovering effect for the list item */
+@keyframes highlight{
+	0%{
+		transform:scale(1);
+	}
+	50%{
+		transform:scale(1.05);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
+.list-item:hover {
+	animation-name:highlight;
+	animation-duration:1s;
+	animation-iteration-count:1;
+	animation-timing-function:ease-in-out;
+	text-shadow:0px 0px 1px green,0px 0px 1px white;
+}
+/* adjusting the name and image of the songs relative to their original position */
+.list-item > div:nth-child(1) {
+	width: 90px;
+	height: 100%;
+	position: relative;
+}
+.list-item > div:nth-child(1) > img {
+	width: 100%;
+	height: 100%;
+	border-radius:50%;
+}
+.author-name {
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+}
+.extra {
+	margin-right:15px;
+}
+/*play button implementation */
+.play{
+	position:relative;
+	top:-105%;
+	width:90px;
+	height:100%;
+	border-radius:50%;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	opacity:0;
+	background-color:transparent;
+}
+.play:hover{
+	opacity:1;
+	background-color:rgba(0,0,0,0.5);
+}
+
+/* aside section 2 is completed */
+/* all the media queries has been added for the responsivness of the web page in seperate css file*/
+/* Main section is ended */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
