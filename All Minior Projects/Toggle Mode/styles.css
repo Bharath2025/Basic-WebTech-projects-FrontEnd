@@ -8,7 +8,7 @@
 	width:40px;
 	height:12px;
 	border-radius:10px;
-	
+	cursor:pointer;
 }
 #toggle:focus{
 	outline-style: none;
@@ -22,3 +22,4 @@
 	background-color: black;
 	border-radius: 50%;
 }
+
