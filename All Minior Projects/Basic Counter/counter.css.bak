@@ -1,0 +1,23 @@
+*{
+    background-color: cyan;
+    margin:0px;
+}
+
+button{
+    background-color: white;
+    border-radius: 10px;
+}
+
+div{
+    overflow: hidden;
+    position:relative;
+    margin:100px;
+}
+p{
+    text-align: center;
+    line-height:80px;
+    width:100%;
+    height:100%;
+    background-color: white;
+    border-top: 1px solid black;
+}
