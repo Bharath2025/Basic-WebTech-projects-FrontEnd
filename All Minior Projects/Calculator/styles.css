@@ -1,0 +1,59 @@
+*,*::after,*::before{
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(90deg,hsl(234, 100%, 8%) , hsl(208, 100%, 29%));
+}
+
+.calculator{
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;        /* To arrange the div elements at the center vertically*/
+    grid-template-columns: repeat(4,10vh);
+    grid-template-rows: minmax(10vh, auto) repeat(6,10vh);
+}
+
+.calculator >button{
+    border:1px solid white;
+    background-color:hsl(208, 100%, 77%) ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    outline:none;
+    cursor: pointer;
+}
+
+.calculator >button:hover{
+    background-color:hsl(208, 100%, 90%) ;
+}
+
+
+.span-2-cols{
+    grid-column: span 2;
+}
+
+.output{
+    grid-area: 1 / 1 / span 1 / span 4;
+    /* or we can make use of grid-column: starting-index/ending-index .ie, => grid-column:1/-1; */
+    background-color: rgba(0,0,0,0.2);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    padding:1vh;
+    word-wrap: break-word;      /* To break the input text content */
+    word-break: break-all;
+    cursor:text;
+}
+
+#previous-operand{
+    color:rgba(255,255,255,0.6);
+    font-size: 1.3rem;
+}
+#current-operand{
+    color:rgba(255,255,255,1);
+    font-size: 2rem;
+}
